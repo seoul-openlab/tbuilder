@@ -40,9 +40,11 @@ npx gulp model --tileset hdmap
 npx gulp model --tileset palace
 ```
 6. 한계점
+```
  [CityGML to 3d-tiles]
 - Only city objects of type Building are converted.
 - Textures are not converted.
 - Only a single B3DM file is generated. (This works fine for small data sets, for larger sets probably a hierarchy of multiple files with different resolutions should be generated.)
 - Files larger than 2GB cannot be converted because of the limits of NodeJS' Buffer.
 - CityGML관련 자세한 한계점은 https://github.com/njam/citygml-to-3dtiles 참조
+```
