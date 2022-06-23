@@ -1,5 +1,5 @@
 # tbuilder
-Converter from 3d models to cesium 3d tileset
+Simple Converter for 3d models to cesium 3d tileset
 # Setup
 1. 최신 node.js 설치(14버전권장)
 2. tbuilder repositary 복제
@@ -40,6 +40,9 @@ npx gulp model --tileset hdmap
 npx gulp model --tileset palace
 ```
 6. 한계점
-- CityGML 텍스터 지원 안됨
-- CityGML LOD2레벨만 지원됨
+ [CityGML to 3d-tiles]
+- Only city objects of type Building are converted.
+- Textures are not converted.
+- Only a single B3DM file is generated. (This works fine for small data sets, for larger sets probably a hierarchy of multiple files with different resolutions should be generated.)
+- Files larger than 2GB cannot be converted because of the limits of NodeJS' Buffer.
 - CityGML관련 자세한 한계점은 https://github.com/njam/citygml-to-3dtiles 참조
