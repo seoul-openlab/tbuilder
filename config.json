@@ -1,0 +1,38 @@
+{
+    "tilesets": [
+        "hdmap1", "palace", "citygml"
+    ],
+    "tileLevel": 16,
+    "layers": [
+        {
+            "tileset": "hdmap1",
+            "layerName": "건물통합정보마스터",
+            "fileType": "obj",
+            "pathPattern": "./test/건물통합정보마스터/**/*.obj",
+            "description": "패턴 건물",
+            "yAxisUp": true,
+            "srid": "unity",
+            "useIndexJson": true
+        },
+        {
+            "tileset": "citygml",
+            "layerName": "경복궁근정전3DS건물",
+            "fileType": "citygml",
+            "pathPattern": "./test/citygml/seoul-citygml2.*xml",
+            "description": "",
+            "yAxisUp": false,
+            "srid": "5186",
+            "useIndexJson": false
+        },
+        {
+            "tileset": "palace",
+            "layerName": "경복궁근정전3DS건물",
+            "fileType": "3ds",
+            "pathPattern": "./test/palace/**/*.3ds",
+            "description": "",
+            "yAxisUp": false,
+            "srid": "5181",
+            "useIndexJson": false
+        }
+    ]
+}
